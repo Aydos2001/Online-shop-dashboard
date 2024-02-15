@@ -57,6 +57,7 @@ const AlertDelete = ({ isOpen, onOpen, onClose, itemId, url, type }) => {
             <AlertDialog
                 isOpen={isOpen}
                 onClose={onClose}
+                size={"sm"}
             >
                 <AlertDialogOverlay>
                     <AlertDialogContent>
@@ -69,10 +70,10 @@ const AlertDelete = ({ isOpen, onOpen, onClose, itemId, url, type }) => {
                         </AlertDialogBody>
 
                         <AlertDialogFooter>
-                            <Button onClick={onClose}>
+                            <Button size={"sm"} rounded={"sm"} onClick={onClose}>
                                 Cancel
                             </Button>
-                            <Button colorScheme={"red"} onClick={() => deleteProduct(itemId)} ml={3}>
+                            <Button size={"sm"} rounded={"sm"} colorScheme={"red"} onClick={() => deleteProduct(itemId)} ml={3}>
                                 Delete
                             </Button>
                         </AlertDialogFooter>
